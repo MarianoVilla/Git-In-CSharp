@@ -53,7 +53,7 @@ void GitCatFile(string[] args)
     var CompressedFileBytes = File.ReadAllBytes(ObjectFullPath);
 
     var ParsedObject = GitObject.ParseObject(CompressedFileBytes);
-    Console.WriteLine(ParsedObject.Content);
+    Console.Write(ParsedObject.Content);
 }
 
 #region Utils
