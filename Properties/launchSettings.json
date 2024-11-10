@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "codecrafters-git": {
+      "commandName": "Project",
+      "commandLineArgs": "cat-file -p 10d3fdfb1030a855cd51db71b5509689d1a9b82c"
+    }
+  }
+}
