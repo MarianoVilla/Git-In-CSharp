@@ -1,59 +1,18 @@
 [![progress-banner](https://backend.codecrafters.io/progress/git/6a7558c5-2572-45b6-a08e-69c49350f802)](https://app.codecrafters.io/users/codecrafters-bot?r=2qF)
 
-This is a starting point for C# solutions to the
-["Build Your Own Git" Challenge](https://codecrafters.io/challenges/git).
+# Holi.
+En este repo vas a encontrar todo el código de la implementación de Git que hicimos de cero, usando C#.
 
-In this challenge, you'll build a small Git implementation that's capable of
-initializing a repository, creating commits and cloning a public repository.
-Along the way we'll learn about the `.git` directory, Git objects (blobs,
-commits, trees etc.), Git's transfer protocols and more.
+El banner de arriba te indica en qué paso estamos/si lo terminamos.
 
-**Note**: If you're viewing this repo on GitHub, head over to
-[codecrafters.io](https://codecrafters.io) to try the challenge.
+## ¿No entendés nada?
 
-# Passing the first stage
+Yo tampoco, pero todo lo que hay en este repo fue explicado y codeado **en vivo** en YouTube; [acá](https://youtube.com/playlist?list=PL6ZpaevWeaf9gDDIr4WlhPhdtQ0LdUthe&si=b97jZItBqp_9AdGx) está la playlist.
 
-The entry point for your Git implementation is in `src/Program.cs`. Study and
-uncomment the relevant code, and push your changes to pass the first stage:
+## Otros recursos copados:
 
-```sh
-git commit -am "pass 1st stage" # any msg
-git push origin master
-```
+* Pro Git (la biblia de Git): https://git-scm.com/book/en/v2
+* Write Yourself a Git (tutos por escrito sobre cómo hacer Git de 0): https://wyag.thb.lt/
+* Git For Computer Scientists (si ya sabés un toque de DSA, esto te va a resultar asequible): https://eagain.net/articles/git-for-computer-scientists/
+* Git Internals (parecido a Pro Git, pero más chiquito como la mía): https://github.com/pluralsight/git-internals-pdf/releases
 
-That's all!
-
-# Stage 2 & beyond
-
-Note: This section is for stages 2 and beyond.
-
-1. Ensure you have `dotnet (8.0)` installed locally
-1. Run `./your_program.sh` to run your Git implementation, which is implemented
-   in `src/Program.cs`.
-1. Commit your changes and run `git push origin master` to submit your solution
-   to CodeCrafters. Test output will be streamed to your terminal.
-
-# Testing locally
-
-The `your_program.sh` script is expected to operate on the `.git` folder inside
-the current working directory. If you're running this inside the root of this
-repository, you might end up accidentally damaging your repository's `.git`
-folder.
-
-We suggest executing `your_program.sh` in a different folder when testing
-locally. For example:
-
-```sh
-mkdir -p /tmp/testing && cd /tmp/testing
-/path/to/your/repo/your_program.sh init
-```
-
-To make this easier to type out, you could add a
-[shell alias](https://shapeshed.com/unix-alias/):
-
-```sh
-alias mygit=/path/to/your/repo/your_program.sh
-
-mkdir -p /tmp/testing && cd /tmp/testing
-mygit init
-```
